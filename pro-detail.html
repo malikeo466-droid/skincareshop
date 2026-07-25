@@ -29,7 +29,6 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
-        /* កែសម្រួលទំហំរូបភាព និងទម្រង់ Box មិនឱ្យកាត់ដាច់ (ប្រើ contain ឬ scale ឱ្យត្រូវទំហំ) */
         .product-detail-img-box {
             width: 100%;
             max-width: 440px;
@@ -39,7 +38,6 @@
             overflow: hidden;
             box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
             background-color: #f9f9f9;
-            /* ពណ៌ផ្ទៃខាងក្រោយเผื่อរូបភាពមានទំហំមិនស្មើគ្នា */
             display: flex;
             align-items: center;
             justify-content: center;
@@ -48,7 +46,6 @@
         .product-detail-img-box img {
             width: 100%;
             height: 100%;
-            /* ផ្លាស់ប្តូរពី cover មក contain ដើម្បីកុំឱ្យរូបភាពរងការកាត់ផ្ដាច់ (Crop) */
             object-fit: contain;
             display: block;
             padding: 10px;
@@ -79,7 +76,8 @@
                         <span
                             class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-danger cart-count-badge">0</span>
                     </a>
-                    <a href="#" class="text-dark" data-bs-toggle="modal" data-bs-target="#authModal">
+                    <a href="#" class="text-dark" id="userAccountBtn" data-bs-toggle="modal"
+                        data-bs-target="#authModal">
                         <i class="bi bi-person fs-5"></i>
                     </a>
                 </div>
@@ -131,10 +129,10 @@
                     </div>
                 </div>
 
-                <!-- Action Buttons -->
+                <!-- Action Buttons (បានកែប្រែឱ្យហៅមុខងារ JavaScript ត្រឹមត្រូវ) -->
                 <div class="d-flex gap-3">
                     <button type="button" onclick="handleAddToCart()" class="btn btn-sage px-4">Add to cart</button>
-                    <a href="qr.html" class="btn btn-outline-custom px-4">Buy Now</a>
+                    <button type="button" onclick="handleBuyNow()" class="btn btn-outline-custom px-4">Buy Now</button>
                 </div>
             </div>
         </div>

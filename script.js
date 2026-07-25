@@ -22,7 +22,7 @@ const products = [
 let currentCategory = 'All';
 
 // ==========================================
-// 2. AUTHENTICATION LOGIC (WITH PASSWORD & REMEMBER ME)
+// 2. AUTHENTICATION LOGIC
 // ==========================================
 function getCurrentUser() {
     return JSON.parse(localStorage.getItem("currentUser") || sessionStorage.getItem("currentUser"));
@@ -228,7 +228,7 @@ function updateCartCount() {
 }
 
 // ==========================================
-// 5. CART OPERATIONS
+// 5. CART OPERATIONS & DETAIL ACTIONS
 // ==========================================
 function addToCart(productId, qty = 1) {
     if (!checkAuthRequirement()) return;
@@ -249,19 +249,38 @@ function addToCart(productId, qty = 1) {
     alert(`Added "${product.title} - ${product.subtitle}" to cart!`);
 }
 
-// កែសម្រួលឱ្យមុខងារ Add to Cart នៅលើទំព័រ Detail ដំណើរការយកចំនួន Qty ពី Input មកគណនានាបញ្ចូលគ្នា
+// មុខងារ Add to Cart សម្រាប់ទំព័រ Detail (ទាញយក id និង qty មកដំណើរការ)
 function handleAddToCart() {
     const urlParams = new URLSearchParams(window.location.search);
-    const productId = parseInt(urlParams.get('id'));
+    let productId = parseInt(urlParams.get('id'));
+    
+    // បើសិនជាអត់មាន id ក្នុង URL ទេ កំណត់យក ID ទី 3 (Tone-Up Sunscreen) ជាលំនាំដើម
+    if (!productId) {
+        productId = 3;
+    }
+
     const qtyInput = document.getElementById('detailQty');
     const qty = qtyInput ? parseInt(qtyInput.value) || 1 : 1;
 
+    addToCart(productId, qty);
+}
+
+// មុខងារ Buy Now សម្រាប់ទំព័រ Detail (Add to Cart រួចបញ្ជូនទៅកាន់ qr.html ភ្លាមៗ)
+function handleBuyNow() {
+    const urlParams = new URLSearchParams(window.location.search);
+    let productId = parseInt(urlParams.get('id'));
+
     if (!productId) {
-        alert("Product not found!");
-        return;
+        productId = 3;
     }
 
+    const qtyInput = document.getElementById('detailQty');
+    const qty = qtyInput ? parseInt(qtyInput.value) || 1 : 1;
+
     addToCart(productId, qty);
+    
+    // បើបាន Add ចូលកន្ត្រកហើយ ទើបលោតទៅទំព័រទូទាត់ QR
+    window.location.href = "qr.html";
 }
 
 function updateQuantity(index, change) {
@@ -413,8 +432,12 @@ function updatePageSEO(product) {
 
 function loadProductDetail() {
     const urlParams = new URLSearchParams(window.location.search);
-    const productId = parseInt(urlParams.get('id'));
-    if (!productId) return;
+    let productId = parseInt(urlParams.get('id'));
+    
+    // បើសិនអត់មាន id ដាក់បង្ហាញផលិតផលទី 3 តាមលំនាំដើម
+    if (!productId) {
+        productId = 3;
+    }
 
     const product = products.find(p => p.id === productId);
     if (!product) return;
