@@ -214,7 +214,7 @@ body {
     margin-left: -50vw;
     margin-right: -50vw;
     min-height: 550px;
-    background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('../Image/home.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('home.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -404,7 +404,7 @@ footer,
 }
 
 .about-hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('../Image/about.jpg') center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('about.jpg') center/cover no-repeat;
     min-height: 420px;
 }
 

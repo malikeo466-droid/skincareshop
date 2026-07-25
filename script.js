@@ -2,21 +2,21 @@
 // 1. PRODUCT DATA
 // ==========================================
 const products = [
-    { id: 1, category: "Sun Screen", title: "Hyalu-Cica", subtitle: "Water-Fit Sun Serum SPF50+ PA++++", price: "$22.00", rating: 4, image: "../Image/product1.jpg" },
-    { id: 2, category: "Sun Screen", title: "Madagascar", subtitle: "Centella Air-Fit Suncream Light SPF 30 PA++++", price: "$18.00", rating: 4, image: "../Image/product2.jpg" },
-    { id: 3, category: "Sun Screen", title: "Madagascar", subtitle: "Centella Tone Brightening Tone-Up Sunscreen SPF50+ PA++++", price: "$22.00", rating: 0, image: "../Image/product3.jpg" },
-    { id: 4, category: "Cleanser", title: "Madagascar", subtitle: "Centella Tea-Trica Foam Cleanser", price: "$16.00", rating: 0, image: "../Image/product4.jpg" },
-    { id: 5, category: "Cleanser", title: "Madagascar", subtitle: "Centella Poremizing Deep Cleansing Foam", price: "$17.00", rating: 4, image: "../Image/product5.jpg" },
-    { id: 6, category: "Cleanser", title: "Madagascar", subtitle: "Centella Ampoule Foam", price: "$15.00", rating: 0, image: "../Image/product6.jpg" },
-    { id: 7, category: "Toner", title: "Madagascar", subtitle: "Centella Toning Toner", price: "$21.00", rating: 4, image: "../Image/product7.jpg" },
-    { id: 8, category: "Toner", title: "Madagascar", subtitle: "Centella Tone Brightening Boosting Toner", price: "$19.00", rating: 0, image: "../Image/product8.jpg" },
-    { id: 9, category: "Toner", title: "Madagascar", subtitle: "Centella Probio-Cica Essence Toner", price: "$20.00", rating: 0, image: "../Image/product9.jpg" },
-    { id: 10, category: "Cream", title: "Madagascar", subtitle: "Centella Tone Brightening Capsule Cream", price: "$24.00", rating: 0, image: "../Image/product10.jpg" },
-    { id: 11, category: "Cream", title: "Madagascar", subtitle: "Centella Probio-Cica Enrich Cream", price: "$25.00", rating: 4, image: "../Image/product11.jpg" },
-    { id: 12, category: "Cream", title: "Madagascar", subtitle: "Centella Soothing Cream", price: "$24.00", rating: 0, image: "../Image/product12.jpg" },
-    { id: 13, category: "Ampoule", title: "Madagascar", subtitle: "Centella Tone Brightening Capsule Ampoule", price: "$25.00", rating: 4, image: "../Image/product13.jpg" },
-    { id: 14, category: "Ampoule", title: "Madagascar", subtitle: "Centella Ampoule", price: "$22.00", rating: 0, image: "../Image/product14.jpg" },
-    { id: 15, category: "Ampoule", title: "Madagascar", subtitle: "Tea-Trica Relief Ampoule", price: "$20.00", rating: 0, image: "../Image/product15.jpg" }
+    { id: 1, category: "Sun Screen", title: "Hyalu-Cica", subtitle: "Water-Fit Sun Serum SPF50+ PA++++", price: "$22.00", rating: 4, image: "product1.jpg" },
+    { id: 2, category: "Sun Screen", title: "Madagascar", subtitle: "Centella Air-Fit Suncream Light SPF 30 PA++++", price: "$18.00", rating: 4, image: "product2.jpg" },
+    { id: 3, category: "Sun Screen", title: "Madagascar", subtitle: "Centella Tone Brightening Tone-Up Sunscreen SPF50+ PA++++", price: "$22.00", rating: 0, image: "product3.jpg" },
+    { id: 4, category: "Cleanser", title: "Madagascar", subtitle: "Centella Tea-Trica Foam Cleanser", price: "$16.00", rating: 0, image: "product4.jpg" },
+    { id: 5, category: "Cleanser", title: "Madagascar", subtitle: "Centella Poremizing Deep Cleansing Foam", price: "$17.00", rating: 4, image: "product5.jpg" },
+    { id: 6, category: "Cleanser", title: "Madagascar", subtitle: "Centella Ampoule Foam", price: "$15.00", rating: 0, image: "product6.jpg" },
+    { id: 7, category: "Toner", title: "Madagascar", subtitle: "Centella Toning Toner", price: "$21.00", rating: 4, image: "product7.jpg" },
+    { id: 8, category: "Toner", title: "Madagascar", subtitle: "Centella Tone Brightening Boosting Toner", price: "$19.00", rating: 0, image: "product8.jpg" },
+    { id: 9, category: "Toner", title: "Madagascar", subtitle: "Centella Probio-Cica Essence Toner", price: "$20.00", rating: 0, image: "product9.jpg" },
+    { id: 10, category: "Cream", title: "Madagascar", subtitle: "Centella Tone Brightening Capsule Cream", price: "$24.00", rating: 0, image: "product10.jpg" },
+    { id: 11, category: "Cream", title: "Madagascar", subtitle: "Centella Probio-Cica Enrich Cream", price: "$25.00", rating: 4, image: "product11.jpg" },
+    { id: 12, category: "Cream", title: "Madagascar", subtitle: "Centella Soothing Cream", price: "$24.00", rating: 0, image: "product12.jpg" },
+    { id: 13, category: "Ampoule", title: "Madagascar", subtitle: "Centella Tone Brightening Capsule Ampoule", price: "$25.00", rating: 4, image: "product13.jpg" },
+    { id: 14, category: "Ampoule", title: "Madagascar", subtitle: "Centella Ampoule", price: "$22.00", rating: 0, image: "product14.jpg" },
+    { id: 15, category: "Ampoule", title: "Madagascar", subtitle: "Tea-Trica Relief Ampoule", price: "$20.00", rating: 0, image: "product15.jpg" }
 ];
 
 let currentCategory = 'All';
