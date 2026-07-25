@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Madagascar Centella Tone-Up Sunscreen | ML SKIN 1004</title>
+    <meta name="description"
+        content="Shop Madagascar Centella Tone Brightening Tone-Up Sunscreen SPF50+ PA++++ at ML SKIN 1004. Protects against UV, brightens dull skin tones, and fades dark spots.">
+    <meta name="keywords"
+        content="ML SKIN 1004, Madagascar Centella, Sunscreen, Tone-Up Sunscreen, Skincare Phnom Penh, Korean Skincare Cambodia">
+    <meta name="author" content="ML SKIN 1004">
+
+    <!-- Open Graph / Social Media SEO -->
+    <meta property="og:title" content="Madagascar Centella Tone-Up Sunscreen | ML SKIN 1004">
+    <meta property="og:description"
+        content="A protective brightening sunscreen that instantly corrects dull skin tones, leaving a fresh, radiant look while fading dark spots.">
+    <meta property="og:image"
+        content="https://images.unsplash.com/photo-1617897903246-719242758050?auto=format&fit=crop&q=80&w=800">
+    <meta property="og:type" content="product">
+
+    <!-- Fonts & CSS Frameworks -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <style>
+        /* កែសម្រួលទំហំរូបភាព និងទម្រង់ Box មិនឱ្យកាត់ដាច់ (ប្រើ contain ឬ scale ឱ្យត្រូវទំហំ) */
+        .product-detail-img-box {
+            width: 100%;
+            max-width: 440px;
+            height: 380px;
+            margin: 0 auto;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+            background-color: #f9f9f9;
+            /* ពណ៌ផ្ទៃខាងក្រោយเผื่อរូបភាពមានទំហំមិនស្មើគ្នា */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .product-detail-img-box img {
+            width: 100%;
+            height: 100%;
+            /* ផ្លាស់ប្តូរពី cover មក contain ដើម្បីកុំឱ្យរូបភាពរងការកាត់ផ្ដាច់ (Crop) */
+            object-fit: contain;
+            display: block;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body class="d-flex flex-column min-vh-100 bg-white">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top bg-white py-3 border-bottom border-light">
+        <div class="container">
+            <a class="navbar-brand fs-4 fw-bold" href="index.html" style="letter-spacing: -0.5px; color: #8A9A5B;">ML
+                SKIN 1004</a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto gap-lg-3">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active fw-semibold" href="products.html">Product</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="d-flex align-items-center gap-3">
+                    <a href="cart.html" class="text-dark position-relative text-decoration-none">
+                        <i class="bi bi-cart3 fs-5"></i>
+                        <span
+                            class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-danger cart-count-badge">0</span>
+                    </a>
+                    <a href="#" class="text-dark" data-bs-toggle="modal" data-bs-target="#authModal">
+                        <i class="bi bi-person fs-5"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container py-4 flex-grow-1">
+        <h3 class="fw-bold mb-4">Product Detail</h3>
+
+        <div class="row g-5 align-items-center">
+            <!-- Left Side Image -->
+            <div class="col-md-6">
+                <div class="product-detail-img-box">
+                    <img id="detailImg"
+                        src="https://images.unsplash.com/photo-1617897903246-719242758050?auto=format&fit=crop&q=80&w=800"
+                        alt="Madagascar Centella Sunscreen">
+                </div>
+            </div>
+
+            <!-- Right Side Product Info -->
+            <div class="col-md-6">
+                <h2 class="fw-bold mb-1" id="detailTitle">Madagascar</h2>
+                <p class="fs-5 text-dark fw-normal mb-3" id="detailSub" style="max-width: 420px; line-height: 1.3;">
+                    Centella Tone Brightening Tone-Up Sunscreen SPF50+ PA++++
+                </p>
+                <div class="price-text mb-3" id="detailPrice">$22.00</div>
+
+                <p class="text-muted small mb-4" style="max-width: 440px; line-height: 1.6;">
+                    A protective brightening sunscreen that instantly corrects dull skin tones, leaving a fresh, radiant
+                    look while fading dark spots.
+                </p>
+
+                <ul class="list-unstyled small text-secondary d-flex flex-column gap-2 mb-4">
+                    <li>✨ Brightens dull skin tone</li>
+                    <li>☀️ High UV protection</li>
+                    <li>🌸 Natural pinkish tone-up</li>
+                    <li>🧪 Fades dark spots</li>
+                </ul>
+
+                <!-- Qty Selector -->
+                <div class="d-flex align-items-center gap-4 mb-4">
+                    <span class="fw-medium fs-5">Qty</span>
+                    <div class="qty-stepper">
+                        <button type="button" onclick="changeQty(-1)">-</button>
+                        <input type="text" id="detailQty" value="1" readonly>
+                        <button type="button" onclick="changeQty(1)">+</button>
+                    </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="d-flex gap-3">
+                    <button type="button" onclick="handleAddToCart()" class="btn btn-sage px-4">Add to cart</button>
+                    <a href="qr.html" class="btn btn-outline-custom px-4">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="pt-5 pb-4 mt-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h5 class="navbar-brand fs-4 fw-bold mb-3" style="color: #8A9A5B;">ML SKIN 1004</h5>
+                    <p class="text-muted extra-small pe-lg-4" style="font-size: 0.75rem; letter-spacing: 0.5px;">
+                        HEALTHY SKIN STARTS WITH NATURE. DISCOVER GENTLE SKINCARE PRODUCTS MADE FOR EVERY SKIN TYPE.
+                    </p>
+                    <div class="mt-3">
+                        <p class="fw-semibold small mb-2 text-uppercase"
+                            style="letter-spacing: 1px; font-size: 0.75rem;">Follow Us</p>
+                        <a href="#" class="social-icon-btn"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-icon-btn"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-icon-btn"><i class="bi bi-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h6 class="fw-bold mb-3 small text-uppercase" style="font-size: 0.8rem;">Quick Links</h6>
+                    <ul class="list-unstyled extra-small d-flex flex-column gap-2" style="font-size: 0.8rem;">
+                        <li><a href="index.html" class="text-muted text-decoration-none">Home</a></li>
+                        <li><a href="about.html" class="text-muted text-decoration-none">About</a></li>
+                        <li><a href="products.html" class="text-muted text-decoration-none">Products</a></li>
+                        <li><a href="contact.html" class="text-muted text-decoration-none">Contact</a></li>
+                        <li><a href="cart.html" class="text-muted text-decoration-none">Cart</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h6 class="fw-bold mb-3 small text-uppercase" style="font-size: 0.8rem;">Catalog</h6>
+                    <ul class="list-unstyled extra-small d-flex flex-column gap-2" style="font-size: 0.8rem;">
+                        <li><a href="products.html" class="text-muted text-decoration-none">Cleanser</a></li>
+                        <li><a href="products.html" class="text-muted text-decoration-none">Toner</a></li>
+                        <li><a href="products.html" class="text-muted text-decoration-none">Cream</a></li>
+                        <li><a href="products.html" class="text-muted text-decoration-none">Sunscreen</a></li>
+                        <li><a href="products.html" class="text-muted text-decoration-none">Ampoule</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h6 class="fw-bold mb-3 small text-uppercase" style="font-size: 0.8rem;">Contact Us</h6>
+                    <p class="text-muted mb-1" style="font-size: 0.8rem;">Phone: +855-977-62-89</p>
+                    <p class="text-muted mb-1" style="font-size: 0.8rem;">Email: mlskin1004@gmail.com</p>
+                    <p class="text-muted mb-0" style="font-size: 0.8rem;">Address: Toul Kork, Phnom Penh</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,461 @@
+/* ==========================================================================
+   ML SKIN 1004 - Complete Design Stylesheet
+   ========================================================================== */
+
+/* --- 1. CSS Variables & Theme Setup --- */
+:root {
+    --primary-olive: #788A53;
+    --primary-hover: #647443;
+    --bg-light: #F7F7F0;
+    --bg-cream: #F9F8F3;
+    --bg-card: #FAF9F3;
+    --bg-footer: #F8F8F0;
+    --text-dark: #222222;
+    --text-muted: #6C757D;
+    --border-radius-card: 20px;
+}
+
+/* --- 2. Base & Typography Styles --- */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFFFFF;
+    color: var(--text-dark);
+}
+
+.brand-title {
+    color: var(--primary-olive) !important;
+    letter-spacing: 0.5px;
+}
+
+.price-text {
+    color: var(--primary-olive);
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+/* --- 3. Header & Navigation --- */
+.navbar {
+    background-color: var(--bg-cream) !important;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.nav-link {
+    color: var(--text-dark) !important;
+    font-size: 0.95rem;
+    font-weight: 400;
+}
+
+.nav-link.active {
+    font-weight: 600;
+}
+
+.cart-count-badge {
+    background-color: var(--primary-olive) !important;
+    color: #ffffff !important;
+    font-size: 0.65rem !important;
+    font-weight: 600;
+    width: 18px;
+    height: 18px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 !important;
+    border-radius: 50% !important;
+    transform: translate(-20%, -20%) !important;
+}
+
+/* --- 4. Buttons & Interactive Elements --- */
+.btn-sage,
+.btn-checkout,
+.btn-custom-submit {
+    background-color: var(--primary-olive) !important;
+    color: #FFFFFF !important;
+    border: none !important;
+    padding: 10px 28px;
+    border-radius: 10px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-sage:hover,
+.btn-checkout:hover,
+.btn-custom-submit:hover {
+    background-color: var(--primary-hover) !important;
+    color: #FFFFFF !important;
+}
+
+.btn-sage-sm {
+    background-color: var(--primary-olive);
+    color: white;
+    border: none;
+    font-size: 0.85rem;
+    padding: 9px 16px;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+.btn-sage-sm:hover {
+    background-color: var(--primary-hover);
+    color: white;
+}
+
+.btn-outline-custom,
+.btn-outline-sage {
+    background-color: #FFFFFF !important;
+    color: var(--text-dark) !important;
+    border: 1px solid #D0CEC5 !important;
+    padding: 9px 16px !important;
+    border-radius: 10px !important;
+    font-size: 0.85rem !important;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.2s ease;
+}
+
+.btn-outline-custom:hover,
+.btn-outline-sage:hover {
+    background-color: #F0EEE6 !important;
+    color: #333 !important;
+}
+
+/* Filter Buttons */
+.filter-btn {
+    background-color: #FFFFFF;
+    border: 1px solid #E2E0D8;
+    color: #666;
+    padding: 6px 20px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+    border-color: var(--primary-olive);
+    color: var(--primary-olive);
+}
+
+/* --- 5. Form Fields & Controls --- */
+.custom-input {
+    border: 1.5px solid #dcdcdc;
+    border-radius: 12px;
+    padding: 14px 18px;
+    font-size: 0.95rem;
+    background-color: #fff;
+}
+
+.custom-input::placeholder {
+    color: #bbb;
+    font-weight: 500;
+}
+
+.custom-input:focus {
+    box-shadow: none;
+    border-color: var(--primary-olive);
+}
+
+.qty-stepper {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid #D5D3CA;
+    border-radius: 4px;
+    overflow: hidden;
+    background-color: #FFF;
+}
+
+.qty-stepper button {
+    border: none;
+    background: transparent;
+    width: 38px;
+    height: 38px;
+    font-size: 1.1rem;
+    color: #555;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.qty-stepper button:hover {
+    background-color: #F0EEE6;
+}
+
+.qty-stepper input {
+    width: 45px;
+    height: 38px;
+    border: none;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #333;
+    background: transparent;
+}
+
+.qty-stepper input::-webkit-outer-spin-button,
+.qty-stepper input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.qty-stepper input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/* --- 6. Hero & Benefit Section --- */
+.hero-bg-image {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    min-height: 550px;
+    background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('../Image/home.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 991.98px) {
+    .hero-bg-image {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+        left: 0;
+        min-height: 450px;
+    }
+}
+
+.benefit-icon-box {
+    background-color: var(--bg-card);
+    padding: 25px 15px;
+    border-radius: 200px;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.benefit-icon-box i {
+    font-size: 2.2rem;
+    color: var(--text-dark);
+}
+
+.benefit-icon-box h6 {
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+/* --- 7. Best Sellers & Products Grid Cards --- */
+.product-card {
+    background-color: var(--bg-card);
+    border-radius: 24px;
+    padding: 16px;
+    border: none;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* ធានាថាផ្នែកអត្ថបទខាងលើលាតសន្ធឹង និងរុញប៊ូតុងចុះក្រោមស្មើគ្នា */
+.product-card>div:first-child {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-subtitle {
+    min-height: 40px;
+    /* កំណត់កម្ពស់អប្បបរមាដើម្បីការពារការធ្លាក់បន្ទាត់ខុសគ្នា */
+}
+
+.product-img-wrapper,
+.product-img-box {
+    background-color: #FFFFFF;
+    border-radius: 18px;
+    height: 260px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+    overflow: hidden;
+    border: 1px solid #EFEFEF;
+}
+
+.product-img-box img,
+.product-img-wrapper img {
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.price-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.star-rating {
+    color: #FFC107;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+/* ប៊ូតុងក្នុងកាតផលិតផល */
+.product-card .d-flex.gap-2 {
+    display: flex;
+    gap: 8px;
+    margin-top: auto;
+}
+
+.product-card .btn-outline-custom,
+.product-card .btn-outline-sage {
+    flex: 1;
+}
+
+.btn-order,
+.product-card button.btn-outline-custom+button,
+.product-card .btn-sage {
+    background-color: var(--primary-olive) !important;
+    color: #FFFFFF !important;
+    border: none !important;
+    flex: 1;
+    padding: 9px 0;
+    border-radius: 10px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn-order:hover,
+.product-card button:hover {
+    background-color: var(--primary-hover) !important;
+    transform: translateY(-1px);
+}
+
+/* --- 8. Footer & Socials --- */
+footer,
+.site-footer {
+    background-color: var(--bg-footer);
+    border-top: 1px solid #EAE6DF;
+    color: #555;
+}
+
+.footer-title {
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: #444;
+}
+
+.footer-description {
+    font-size: 0.75rem;
+}
+
+.footer-links a {
+    color: #666;
+    text-decoration: none;
+    font-size: 0.85rem;
+    line-height: 2;
+    display: inline-block;
+}
+
+.footer-links a:hover {
+    color: var(--primary-olive);
+}
+
+.footer-contact-info {
+    font-size: 0.85rem;
+}
+
+.social-btn,
+.social-icon,
+.social-icon-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid #dcdcdc;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #555;
+    text-decoration: none;
+    font-size: 0.9rem;
+    background-color: #fff;
+    transition: all 0.2s ease;
+    margin-right: 6px;
+}
+
+.social-btn:hover,
+.social-icon:hover,
+.social-icon-btn:hover {
+    background-color: var(--primary-olive);
+    color: #fff;
+    border-color: var(--primary-olive);
+}
+
+.about-hero {
+     background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('../image/about.jpg') center/cover no-repeat;
+     min-height: 420px;
+ }
+
+ .custom-mission-card {
+     background-color: #F9F8F6;
+     border-radius: 16px;
+     padding: 30px;
+     border: none;
+ }
+
+ .circle-icon-box {
+     width: 70px;
+     height: 70px;
+     background-color: #F3F1EC;
+     border-radius: 50%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin: 0 auto 15px auto;
+     font-size: 1.5rem;
+     color: #4A4A4A;
+ }
+
+ footer {
+     background-color: #F5F3EE !important;
+ }
+
+ .btn-sage {
+     background-color: #8A9A5B;
+     color: white;
+     border: none;
+ }
+
+ .btn-sage:hover {
+     background-color: #78864E;
+     color: white;
+ }
+
+ .social-icon-btn {
+     display: inline-flex;
+     width: 36px;
+     height: 36px;
+     background: #fff;
+     border-radius: 50%;
+     align-items: center;
+     justify-content: center;
+     color: #333;
+     margin-right: 8px;
+     text-decoration: none;
+     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+ }
