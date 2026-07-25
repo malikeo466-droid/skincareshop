@@ -266,7 +266,6 @@ body {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* ធានាថាផ្នែកអត្ថបទខាងលើលាតសន្ធឹង និងរុញប៊ូតុងចុះក្រោមស្មើគ្នា */
 .product-card>div:first-child {
     flex-grow: 1;
     display: flex;
@@ -275,7 +274,6 @@ body {
 
 .product-subtitle {
     min-height: 40px;
-    /* កំណត់កម្ពស់អប្បបរមាដើម្បីការពារការធ្លាក់បន្ទាត់ខុសគ្នា */
 }
 
 .product-img-wrapper,
@@ -311,7 +309,6 @@ body {
     letter-spacing: 1px;
 }
 
-/* ប៊ូតុងក្នុងកាតផលិតផល */
 .product-card .d-flex.gap-2 {
     display: flex;
     gap: 8px;
@@ -407,55 +404,40 @@ footer,
 }
 
 .about-hero {
-     background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('../image/about.jpg') center/cover no-repeat;
-     min-height: 420px;
- }
+    background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('../Image/about.jpg') center/cover no-repeat;
+    min-height: 420px;
+}
 
- .custom-mission-card {
-     background-color: #F9F8F6;
-     border-radius: 16px;
-     padding: 30px;
-     border: none;
- }
+.custom-mission-card {
+    background-color: #F9F8F6;
+    border-radius: 16px;
+    padding: 30px;
+    border: none;
+}
 
- .circle-icon-box {
-     width: 70px;
-     height: 70px;
-     background-color: #F3F1EC;
-     border-radius: 50%;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     margin: 0 auto 15px auto;
-     font-size: 1.5rem;
-     color: #4A4A4A;
- }
+.circle-icon-box {
+    width: 70px;
+    height: 70px;
+    background-color: #F3F1EC;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px auto;
+    font-size: 1.5rem;
+    color: #4A4A4A;
+}
 
- footer {
-     background-color: #F5F3EE !important;
- }
-
- .btn-sage {
-     background-color: #8A9A5B;
-     color: white;
-     border: none;
- }
-
- .btn-sage:hover {
-     background-color: #78864E;
-     color: white;
- }
-
- .social-icon-btn {
-     display: inline-flex;
-     width: 36px;
-     height: 36px;
-     background: #fff;
-     border-radius: 50%;
-     align-items: center;
-     justify-content: center;
-     color: #333;
-     margin-right: 8px;
-     text-decoration: none;
-     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
- }
+.social-icon-btn {
+    display: inline-flex;
+    width: 36px;
+    height: 36px;
+    background: #fff;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    margin-right: 8px;
+    text-decoration: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
